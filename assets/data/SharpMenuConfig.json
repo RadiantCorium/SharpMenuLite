@@ -1,0 +1,21 @@
+{
+    "hasBG":false,
+    "bgPath":null,
+    "fontPath":null,
+    "colorScheme":
+    {
+        "menuBG":"0xAA000000",
+
+        "headerText":"0xFFFFFFFF",
+
+        "categoryBG":"0xAA555555",
+        "categoryButtonBG":"0xCC111111",
+        "categoryButtonText":"0xFFFFFFFF",
+        "categoryButtonSelector":"0x55FFFFFF",
+
+        "descriptionBG":"0xAA555555",
+        "descriptionText":"0xFFFFFFFF",
+        
+        "optionText":"0xFFFFFFFF"
+    }
+}
