@@ -109,12 +109,12 @@ class SharpMenuState extends FlxState
 		add(descriptionBG);
 
 		descriptionText = new FlxText(0, 0, descriptionBG.width, "Please select an option to view its description.");
-		descriptionText.setFormat(null, Std.int(descriptionBG.height * 0.8), Std.parseInt(config.colorScheme.descriptionText), CENTER);
+		descriptionText.setFormat(config.fontPath, Std.int(descriptionBG.height * 0.8), Std.parseInt(config.colorScheme.descriptionText), CENTER);
 		descriptionText.setPosition(descriptionBG.x, descriptionBG.y + descriptionBG.height / 2 - descriptionText.height / 2);
 		add(descriptionText);
 
 		headerText = new FlxText(0, 0, descriptionBG.width, "Header text.");
-		headerText.setFormat(null, Std.int(descriptionBG.height * 0.8), Std.parseInt(config.colorScheme.headerText), CENTER);
+		headerText.setFormat(config.fontPath, Std.int(descriptionBG.height * 0.8), Std.parseInt(config.colorScheme.headerText), CENTER);
 		headerText.setPosition(descriptionBG.x, menuBG.y);
 		add(headerText);
 
@@ -126,7 +126,7 @@ class SharpMenuState extends FlxState
 			add(btnBg);
 
 			var btnTxt:FlxText = new FlxText(0, 0, btnBg.width, optionGroups[i].name);
-			btnTxt.setFormat(null, 12, Std.parseInt(config.colorScheme.categoryButtonText), CENTER);
+			btnTxt.setFormat(config.fontPath, 12, Std.parseInt(config.colorScheme.categoryButtonText), CENTER);
 			btnTxt.x = btnBg.x;
 			btnTxt.y = btnBg.y + btnBg.height / 2 - btnTxt.height / 2;
 			add(btnTxt);
@@ -370,7 +370,7 @@ class SharpMenuState extends FlxState
 			{
 				var value:Any = "";
 				var text:FlxText = new FlxText(0, 0, FlxG.width, optionGroups[curSelectedGroup].options[i].label);
-				text.setFormat(null, 16, Std.parseInt(config.colorScheme.optionText), LEFT);
+				text.setFormat(config.fontPath, 16, Std.parseInt(config.colorScheme.optionText), LEFT);
 				text.x = categoryBG.x + categoryBG.width + 10;
 				text.y = categoryBG.y + (i * text.height) + i * 4 + headerText.height;
 				value = getOptionValue(optionGroups[curSelectedGroup].options[i], optionGroups[curSelectedGroup].options[i].saveTo,
