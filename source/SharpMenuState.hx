@@ -370,7 +370,7 @@ class SharpMenuState extends FlxState
 			{
 				var value:Any = "";
 				var text:FlxText = new FlxText(0, 0, FlxG.width, optionGroups[curSelectedGroup].options[i].label);
-				text.setFormat(config.fontPath, 16, Std.parseInt(config.colorScheme.optionText), LEFT);
+				text.setFormat(config.fontPath, config.optionFontSize, Std.parseInt(config.colorScheme.optionText), LEFT);
 				text.x = categoryBG.x + categoryBG.width + 10;
 				text.y = categoryBG.y + (i * text.height) + i * 4 + headerText.height;
 				value = getOptionValue(optionGroups[curSelectedGroup].options[i], optionGroups[curSelectedGroup].options[i].saveTo,
@@ -527,6 +527,7 @@ typedef Config =
 	hasBG:Bool,
 	bgPath:String,
 	fontPath:String,
+	optionFontSize:Int,
 	colorScheme:ColorScheme
 }
 

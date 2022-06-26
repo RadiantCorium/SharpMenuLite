@@ -2,6 +2,7 @@
     "hasBG":false,
     "bgPath":null,
     "fontPath":null,
+    "optionFontSize":16,
     "colorScheme":
     {
         "menuBG":"0xAA000000",
